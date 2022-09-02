@@ -1,0 +1,24 @@
+{
+  "name": "vanilla-node-hosting",
+  "version": "1.0.0",
+  "description": "hosting server and page routing using vanilla node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenzelEchev/vanilla-node-hosting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenzelEchev/vanilla-node-hosting/issues"
+  },
+  "homepage": "https://github.com/DenzelEchev/vanilla-node-hosting#readme",
+  "dependencies": {
+    "figlet": "^1.5.2"
+  }
+}
