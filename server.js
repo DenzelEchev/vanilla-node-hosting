@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
+const cors = require(cors)
 const PORT = 8000
+
 const pokeInfo = {
     "bulbasaur": {
       "name": "Bulbasaur",
@@ -24,6 +26,8 @@ const pokeInfo = {
     }
 }
 
+app.use(cors())
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
 })
@@ -46,6 +50,6 @@ app.get('/api/:name', (req,res)=>{
   
 })
 
-app.listen(PORT, () =>{
+app.listen(process.env.PORT || PORT, () =>{
   console.log(`The server is running on port ${PORT}`)
 })
